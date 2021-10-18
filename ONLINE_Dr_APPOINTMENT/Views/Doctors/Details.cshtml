@@ -1,0 +1,66 @@
+﻿@model ONLINE_Dr_APPOINTMENT.Models.Doctor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Doctor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Specialization.Specialization_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Specialization.Specialization_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor_Picture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor_Picture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor_Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor_Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Doctor_fees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Doctor_fees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Doctor_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
